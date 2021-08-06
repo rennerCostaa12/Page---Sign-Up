@@ -1,5 +1,7 @@
 //removing the form loading
 document.getElementById('form').addEventListener('submit', (e)=>{
+    console.log('dados enviados')
+
     e.preventDefault()
 })
 
@@ -17,8 +19,6 @@ const msgAlert_Password = document.getElementById('msgAlertPassword')
 
 function ValidateForm(){
     if(first_Name.value === '' && last_Name.value === '' && email.value === '' && password.value === ''){
-        alert('Preencha os campo!')
-
         first_Name.classList.add('errorSubmit')
         last_Name.classList.add('errorSubmit')
         email.classList.add('errorSubmit')

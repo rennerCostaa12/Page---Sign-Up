@@ -22,19 +22,29 @@
                 butunderstanding how developers think is invaluable.
             </p>
         </div>
-        <form action="" id="form">
-            <h1>SIGN UP</h1>
-            <input type="text" name="firstName" id="firstName" placeholder="First Name" >
-            <p id="msgAlertFirstName"></p>
-            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-            <p id="msgAlertLastName"></p>
-            <input type="email" name="email" id="email" placeholder="Email Address">
-            <p id="msgAlertEmail"></p>
-            <input type="password" name="password" id="password" placeholder="Password">
-            <p id="msgAlertPassword"></p>
-    
-            <button id="buttonSubmit">CLAIM YOUR FREE TRIAL </button>
-        </form>
+
+        <div class="sign-up">
+            <h1><span class="fontWeight">Try it free 7 days</span> then $20/mo. thereafter</h1>
+            <form action="" id="form">
+                <h1>SIGN UP</h1>
+
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                    <p id="msgAlertFirstName"></p>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                    <p id="msgAlertLastName"></p>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    <p id="msgAlertEmail"></p>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                    <p id="msgAlertPassword"></p>
+        
+                <button id="buttonSubmit" type="submit">CLAIM YOUR FREE TRIAL </button>
+
+                <div class="terms-and-services">
+                    <h6>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></h6>
+                </div>
+            </form>
+        </div>
+        
     </section>
     <script src="js/main.js"></script>
 </body>
